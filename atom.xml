@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aagu.github.io/"/>
-  <updated>2017-02-07T03:27:55.636Z</updated>
+  <updated>2017-02-07T07:52:12.364Z</updated>
   <id>https://aagu.github.io/</id>
   
   <author>
@@ -14,6 +14,23 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一篇</title>
+    <link href="https://aagu.github.io/2017/02/07/%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
+    <id>https://aagu.github.io/2017/02/07/第一篇/</id>
+    <published>2017-02-07T07:49:42.000Z</published>
+    <updated>2017-02-07T07:52:12.364Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;第一篇，仅为测试&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
