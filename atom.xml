@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aagu.github.io/"/>
-  <updated>2017-02-21T04:30:25.948Z</updated>
+  <updated>2017-04-15T14:36:17.469Z</updated>
   <id>https://aagu.github.io/</id>
   
   <author>
@@ -14,6 +14,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>没有显示器怎么玩树莓派</title>
+    <link href="https://aagu.github.io/2017/04/15/%E6%B2%A1%E6%9C%89%E6%98%BE%E7%A4%BA%E5%99%A8%E6%80%8E%E4%B9%88%E7%8E%A9%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    <id>https://aagu.github.io/2017/04/15/没有显示器怎么玩树莓派/</id>
+    <published>2017-04-15T12:45:58.000Z</published>
+    <updated>2017-04-15T14:36:17.469Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;emsp;&amp;emsp;把原来的树莓派套件卖掉之后，自己又忍不住再买了一个。这次只买了一台树莓派，没有鼠键、没有显示器。靠着谷歌搜罗的教程成功实现无显示器操作，&lt;br&gt;在这里把过程记录一下，也可为其他人做一个参考。&lt;br&gt;&lt;br&gt;&amp;emsp;&amp;emsp;本篇假设是对全新到手
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>氢OS 3.0 体验</title>
