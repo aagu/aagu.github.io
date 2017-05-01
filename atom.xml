@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aagu.github.io/"/>
-  <updated>2017-04-15T14:36:17.469Z</updated>
+  <updated>2017-05-01T09:46:55.520Z</updated>
   <id>https://aagu.github.io/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浙江理工路由器上网</title>
+    <link href="https://aagu.github.io/2017/05/01/%E6%B5%99%E6%B1%9F%E7%90%86%E5%B7%A5%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E7%BD%91/"/>
+    <id>https://aagu.github.io/2017/05/01/浙江理工路由器上网/</id>
+    <published>2017-05-01T07:14:15.000Z</published>
+    <updated>2017-05-01T09:46:55.520Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;emsp;&amp;emsp;本篇博文介绍了一种可以在浙江理工学生宿舍使用路由器联网的可行方法。&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;关于浙理的网络：&lt;br&gt;&lt;br&gt;&amp;emsp;&amp;emsp;浙江理工宿舍网采用锐捷进行校内认证，之后需要连接L2TP类型的VPN才能访问外网。锐捷认证可以
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>没有显示器怎么玩树莓派</title>
