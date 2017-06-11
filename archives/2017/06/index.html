@@ -10,7 +10,7 @@
     
     <title>
         
-            浙江理工路由器上网 | 
+            归档: 2017/6 | 
         
         aagu&#39;blog
     </title>
@@ -58,7 +58,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://aagu.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="浙江理工路由器上网 | aagu&#39;blog">
+    <meta property="og:title" content="归档: 2017/6 | aagu&#39;blog">
     <meta property="og:description" content="null">
     
 
@@ -221,241 +221,96 @@
                         </button>
                     
 
-                    <!-- Post TOC -->
-
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
     
-    <!-- Back Button -->
-    <!--
-    <div class="material-back" id="backhome-div" tabindex="0">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
-           href="#" onclick="window.history.back();return false;"
-           target="_self"
-           role="button"
-           data-upgraded=",MaterialButton,MaterialRipple">
-            <i class="material-icons" role="presentation">arrow_back</i>
-            <span class="mdl-button__ripple-container">
-                <span class="mdl-ripple"></span>
-            </span>
-        </a>
-    </div>
-    -->
+    <div class="locate-thumbnail-symbol"></div>
 
-    <!-- Left aligned menu below button -->
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
+    <!-- Pin on top -->
+    
 
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一、锐捷相关配置"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、锐捷相关配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#注意！如果不断显示发送信号包以保持在线，请按Ctrl-C终止当前程序"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">注意！如果不断显示发送信号包以保持在线，请按Ctrl+C终止当前程序</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二、闪讯拨号"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、闪讯拨号</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#附件下载"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">附件下载</span></a></li></ol></li></ol>
-
-        <!--
-        <li class="mdl-menu__item">
-            Some Action
-        </li>
-        -->
-    </ul>
-
-
-
-
-<!-- Layouts -->
-
-    <!-- Post Module -->
-    <div class="material-post_container">
-
-        <div class="material-post mdl-grid">
-            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-
-                <!-- Post Header(Thumbnail & Title) -->
-                
-    <!-- Paradox Post Header -->
+    <!-- Normal Post -->
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script>
-    var randomNum = Math.floor(Math.random() * 19 + 1);
+        
+    
 
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2017/06/11/浙江理工路由器上网（新篇）/">浙江理工路由器上网（新篇）</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            &emsp;&emsp;上一篇中介绍了一种可以在浙江理工使用路由器的方法，可是整个过程配置繁琐，容易出错。并且当时的LEDE官方固件不能开启2.4G...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2017/06/11/浙江理工路由器上网（新篇）/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="aagu's avatar">
+            </div>
+            <div>
+                <strong>aagu</strong>
+                <span>6月 11, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+            <!-- Category -->
+            <span class="post_entry-category">
+                
+            </span>
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+
+    
+
+    
+        <script>
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 19 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
 </script>
 
-        
-    
-            <p class="article-headline-p">
-                浙江理工路由器上网
-            </p>
-        </div>
-
-
-
-
-
-                
-                    <!-- Paradox Post Info -->
-                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>aagu</strong>
-        <span>5月 01, 2017</span>
-    </div>
-
-    <div class="section-spacer"></div>
-
-    <!-- Favorite -->
-    <!--
-        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-            <i class="material-icons" role="presentation">favorite</i>
-            <span class="visuallyhidden">favorites</span>
-        </button>
-    -->
-
-    <!-- Qrcode -->
-    
-
-    <!-- Tags (bookmark) -->
-    
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        
-    </ul>
-    
-
-    <!-- Share -->
-    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-    
-
-    
-
-    <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=浙江理工路由器上网&url=https://aagu.github.io//2017/05/01/浙江理工路由器上网/index.html&pic=&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                分享到微博
-            </li>
-        </a>
-    
-
-    <!-- Share Twitter -->
-    
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=浙江理工路由器上网&url=https://aagu.github.io//2017/05/01/浙江理工路由器上网/index.html&via=aagu" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Twitter
-            </li>
-        </a>
-    
-
-    <!-- Share Facebook -->
-    
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://aagu.github.io//2017/05/01/浙江理工路由器上网/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Facebook
-            </li>
-        </a>
-    
-
-    <!-- Share Google+ -->
-    
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://aagu.github.io//2017/05/01/浙江理工路由器上网/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Google+
-            </li>
-        </a>
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-
-    <!-- Share Telegram -->
-    
-</ul>
-
-</div>
-
-                
-
-                <!-- Post Content -->
-                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
-    
-        <p>&emsp;&emsp;本篇博文介绍了一种可以在浙江理工学生宿舍使用路由器联网的可行方法。<br></p>
-<hr>
-<p>关于浙理的网络：<br><br>&emsp;&emsp;浙江理工宿舍网采用锐捷进行校内认证，之后需要连接L2TP类型的VPN才能访问外网。锐捷认证可以使用MentoHust代替，该软件在多个平台上可用。<br><br>&emsp;&emsp;至于L2TP拨号，电信网是有自己的客户端———闪讯，闪讯在拨号时会创建一个L2TP类型的VPN连接，在退出后会自动把自己建的VPN删除。闪讯在拨号时会对VPN的用户名进行加密计算，防止绕过闪讯客户端进行登陆。<br>更无赖的是闪讯会检测电脑上是否有WiFi共享软件，一旦检测到共享软件就会断开网络连接。加之MentoHust认证成功后系统便会收到网络中心的消息：“不要使用WiFi等共享软件，出现故障一律需要重装”，以此恐吓用户不要使用WiFi共享软件。<br><br>&emsp;&emsp;移动网络使用系统VPN进行拨号，不会对用户名加密。<br><br><br>&emsp;&emsp;无论哪种VPN拨号，都要求使用CHAP协议，但是服务器都没有认证密钥，所以需要向Windows系统的注册表导入无认证密钥的CHAP支持的注册表文件，对于我这样的强迫症来说相当不爽。<br></p>
-<hr>
-<p>废话说了这么多，下面进入正题：<br><br>必备条件：网线若干、一台可以刷OpenWrt类固件的路由器、PuTTY和WinSCP两个软件，还有不少的耐心<br><br>&emsp;&emsp;解释一下为什么是OpenWrt固件，原厂固件和Pandava类固件不能将WAN接口虚拟成多个接口，而我们在进行MentoHust认证的时候需要把WAN口设置成静态IP，Pandava固件此时不能在进行L2TP拨号（以我的技术水平来看，是这样）。<br><br>&emsp;&emsp;OpenWrt固件的刷写本篇不做演示。所以，假设你已经有了一台具备相应固件的路由器。演示中使用的路由器是斐讯K2，固件为官方版LEDE 17.01，所需ipk包文末有下载<br></p>
-<h3 id="一、锐捷相关配置"><a href="#一、锐捷相关配置" class="headerlink" title="一、锐捷相关配置"></a>一、锐捷相关配置<br></h3><p>将路由器和网络端口及电脑连接好。打开浏览器，输入192.168.1.1，设置密码，进入路由器。<br><img src="http://olpfkpg3n.bkt.clouddn.com/1.png" alt=""><br><br><img src="http://olpfkpg3n.bkt.clouddn.com/2.png" alt=""><br>选择网络-接口<br><br><img src="http://olpfkpg3n.bkt.clouddn.com/3.png" alt=""><br>点击WAN口右侧的修改，更改WAN口设置<br><img src="http://olpfkpg3n.bkt.clouddn.com/5.png" alt=""><br>在IPv4地址中填入自己的IP，在IPv4网关中填入自己的网关（网关=IP最后一位改成1）。点击保存&amp;应用。<br><br>打开WinSCP，文件协议选择SCP，主机名是路由器的ip，填写用户名、密码，点击登陆<br><img src="http://olpfkpg3n.bkt.clouddn.com/6.png" alt=""><br>登陆之后如下图，在右侧窗口定位到<code>/usr/bin</code>文件夹，将mentohust直接拖进去。<br><img src="http://olpfkpg3n.bkt.clouddn.com/7.png" alt=""><br>修改mentohust属性,在mentohust上打开右键菜单，选择属性，将权限一栏的三个X勾选，点击确定<br><br><img src="http://olpfkpg3n.bkt.clouddn.com/8.png" alt=""><br><br>现在点击WinSCP左上角的闪电图标，打开PuTTY<br><img src="http://olpfkpg3n.bkt.clouddn.com/9.png" alt=""><br><br>输入用户名和密码登陆<br><img src="http://olpfkpg3n.bkt.clouddn.com/10.png" alt=""><br><img src="http://olpfkpg3n.bkt.clouddn.com/11.png" alt=""><br><br>在窗口中输入mentohust，回车。按照提示输入信息，网卡选eth0.2，用户名是学号，密码是123456<br><br>如果看到此图说明锐捷已经连上了<br><img src="http://olpfkpg3n.bkt.clouddn.com/12.jpg" alt=""></p>
-<h4 id="注意！如果不断显示发送信号包以保持在线，请按Ctrl-C终止当前程序"><a href="#注意！如果不断显示发送信号包以保持在线，请按Ctrl-C终止当前程序" class="headerlink" title="注意！如果不断显示发送信号包以保持在线，请按Ctrl+C终止当前程序"></a>注意！如果不断显示发送信号包以保持在线，请按Ctrl+C终止当前程序</h4><p>并在WinSCP中定位到<code>/etc</code>文件夹,按图所示用内部编辑器打开mentohust.conf文件<br><img src="http://olpfkpg3n.bkt.clouddn.com/13.png" alt=""><br><br>将IP、Mask、Gateway（网关）和DNS填上<br><br><img src="http://olpfkpg3n.bkt.clouddn.com/14.png" alt=""><br><br>现在再次尝试连接mentohust<br><br>在windows上打开Power Shell或者CMD，ping一下自己的网关，能够ping通应该是下图这样的<br><img src="http://olpfkpg3n.bkt.clouddn.com/15.jpg" alt=""><br><br>好了，至此锐捷认证成功</p>
-<h3 id="二、闪讯拨号"><a href="#二、闪讯拨号" class="headerlink" title="二、闪讯拨号"></a>二、闪讯拨号</h3><p>浏览器登陆192.168.1.1，选择网络-接口<br><img src="http://olpfkpg3n.bkt.clouddn.com/3.png" alt=""><br>点击添加新接口，出现下图<br><img src="http://olpfkpg3n.bkt.clouddn.com/16.png" alt=""><br>协议选择L2TP，填入名称，提交。<br><img src="http://olpfkpg3n.bkt.clouddn.com/17.png" alt=""><br>服务器是LNS地址,浙理都填图示这个，用户名、密码填写闪讯的用户名密码。<br><br>切换到高级设置选项卡<br><img src="http://olpfkpg3n.bkt.clouddn.com/18.png" alt=""><br>MTU填写一个1400左右的数值，再切换到防火墙设置<br><img src="http://olpfkpg3n.bkt.clouddn.com/19.png" alt=""><br>将该连接分配到WAN域中，点击保存&amp;应用<br><br>将WinSCP定位到<code>/usr/lib/pppd/2.4.7</code>中，将hangzhou_sxplugin.so拖入其中，右键-属性，和mentohust一样的改法，<br>把三个X选上。<br><br><img src="http://olpfkpg3n.bkt.clouddn.com/20.png" alt=""><br><br>再定位到<code>/etc/config</code>中，使用内置编辑器修改<code>network</code>这个文件<br><img src="http://olpfkpg3n.bkt.clouddn.com/21.png" alt=""><br><br>找到名字是你设置的VPN的那个interface，加入画了红线的这一行<br><img src="http://olpfkpg3n.bkt.clouddn.com/22.png" alt=""><br><br>浏览器登陆192.168.1.1，选择网络-接口<br><img src="http://olpfkpg3n.bkt.clouddn.com/3.png" alt=""><br>点击l2tp-XXXX那里的连接<br><br>不出意外的话，网络已经连通了！</p>
-<h4 id="附件下载"><a href="#附件下载" class="headerlink" title="附件下载"></a>附件下载</h4><p><a href="http://pan.baidu.com/s/1sl4QepJ" target="_blank" rel="external">K2 LEDE 17.01所需ipk包</a><br>备注：原版LEDE不带L2TP拨号功能，需要安装此包中的ipk来添加L2TP拨号功能<br><br><a href="http://pan.baidu.com/s/1eSknMpW" target="_blank" rel="external">K2(ramips_mt7600)可用mentohust和sxplugin</a><br><br><a href="http://pan.baidu.com/s/1sl4QepJ" target="_blank" rel="external">一个集成了L2TP拨号的K2 OpenWrt固件</a>（来源网络，侵删）</p>
-
-    
-
     
 </div>
-
-
-                
-
-                <!-- Post Comments -->
-                
-                    
-
-
-
-
-
-
-
-                
-            </div>
-
-            <!-- Post Prev & Next Nav -->
-            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-    <!-- Prev Nav -->
-    
-        <a href="/2017/06/11/浙江理工路由器上网（新篇）/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
-
-    <!-- Section Spacer -->
-    <div class="section-spacer"></div>
-
-    <!-- Next Nav -->
-    
-        <a href="/2017/04/15/没有显示器怎么玩树莓派/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
-    
-</nav>
-
-        </div>
-    </div>
-
 
 
                     

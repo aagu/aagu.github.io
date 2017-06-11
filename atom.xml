@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aagu.github.io/"/>
-  <updated>2017-05-01T11:07:46.480Z</updated>
+  <updated>2017-06-11T03:56:07.904Z</updated>
   <id>https://aagu.github.io/</id>
   
   <author>
@@ -14,6 +14,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浙江理工路由器上网（新篇）</title>
+    <link href="https://aagu.github.io/2017/06/11/%E6%B5%99%E6%B1%9F%E7%90%86%E5%B7%A5%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E7%BD%91%EF%BC%88%E6%96%B0%E7%AF%87%EF%BC%89/"/>
+    <id>https://aagu.github.io/2017/06/11/浙江理工路由器上网（新篇）/</id>
+    <published>2017-06-11T02:43:55.000Z</published>
+    <updated>2017-06-11T03:56:07.904Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;emsp;&amp;emsp;上一篇中介绍了一种可以在浙江理工使用路由器的方法，可是整个过程配置繁琐，容易出错。并且当时的LEDE官方固件不能开启2.4GHz的WiFi频道（会导致重启），于是我开始尝试自行编译固件，并将所需软件包集成。在参考GitHub上的相关源码后，编译了集成
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>浙江理工路由器上网</title>
