@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aagu.github.io/"/>
-  <updated>2017-06-11T03:56:07.904Z</updated>
+  <updated>2017-06-29T02:18:22.447Z</updated>
   <id>https://aagu.github.io/</id>
   
   <author>
@@ -14,6 +14,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TensorFlow安装小记</title>
+    <link href="https://aagu.github.io/2017/06/29/TensorFlow%E5%AE%89%E8%A3%85%E5%B0%8F%E8%AE%B0/"/>
+    <id>https://aagu.github.io/2017/06/29/TensorFlow安装小记/</id>
+    <published>2017-06-29T01:03:53.000Z</published>
+    <updated>2017-06-29T02:18:22.447Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;硬件信息：&quot;&gt;&lt;a href=&quot;#硬件信息：&quot; class=&quot;headerlink&quot; title=&quot;硬件信息：&quot;&gt;&lt;/a&gt;硬件信息：&lt;br&gt;&lt;/h4&gt;&lt;p&gt;主板 supermicro X9SRG&lt;br&gt;&lt;br&gt;CPU  Xeon E5-2620&lt;br&gt;&lt;br&gt;显卡
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>浙江理工路由器上网（新篇）</title>

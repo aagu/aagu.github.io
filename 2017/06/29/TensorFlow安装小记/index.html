@@ -10,7 +10,7 @@
     
     <title>
         
-            归档 | 
+            TensorFlow安装小记 | 
         
         aagu&#39;blog
     </title>
@@ -58,7 +58,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://aagu.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档 | aagu&#39;blog">
+    <meta property="og:title" content="TensorFlow安装小记 | aagu&#39;blog">
     <meta property="og:description" content="null">
     
 
@@ -221,453 +221,236 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#硬件信息："><span class="post-toc-number">1.</span> <span class="post-toc-text">硬件信息：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1、安装显卡驱动"><span class="post-toc-number">2.</span> <span class="post-toc-text">1、安装显卡驱动</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2、安装CUDA"><span class="post-toc-number">3.</span> <span class="post-toc-text">2、安装CUDA</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3、安装cuDNN"><span class="post-toc-number">4.</span> <span class="post-toc-text">3、安装cuDNN</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4、安装TensorFlow"><span class="post-toc-number">5.</span> <span class="post-toc-text">4、安装TensorFlow</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-克隆仓库"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">(1)克隆仓库</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-安装Bazel"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">(2)安装Bazel</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3-安装python依赖"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">(3)安装python依赖</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#4-配置编译脚本"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">(4)配置编译脚本</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#5-编译"><span class="post-toc-number">5.5.</span> <span class="post-toc-text">(5)编译</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#6-安装"><span class="post-toc-number">5.6.</span> <span class="post-toc-text">(6)安装</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#关于显卡驱动："><span class="post-toc-number">6.</span> <span class="post-toc-text">关于显卡驱动：</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/06/29/TensorFlow安装小记/">TensorFlow安装小记</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            硬件信息：
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/06/29/TensorFlow安装小记/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="aagu's avatar">
-            </div>
-            <div>
-                <strong>aagu</strong>
-                <span>6月 29, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/06/11/浙江理工路由器上网（新篇）/">浙江理工路由器上网（新篇）</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            &emsp;&emsp;上一篇中介绍了一种可以在浙江理工使用路由器的方法，可是整个过程配置繁琐，容易出错。并且当时的LEDE官方固件不能开启2.4G...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/06/11/浙江理工路由器上网（新篇）/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="aagu's avatar">
-            </div>
-            <div>
-                <strong>aagu</strong>
-                <span>6月 11, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/05/01/浙江理工路由器上网/">浙江理工路由器上网</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            &emsp;&emsp;本篇博文介绍了一种可以在浙江理工学生宿舍使用路由器联网的可行方法。
-
-关于浙理的网络：...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/05/01/浙江理工路由器上网/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="aagu's avatar">
-            </div>
-            <div>
-                <strong>aagu</strong>
-                <span>5月 01, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/04/15/没有显示器怎么玩树莓派/">没有显示器怎么玩树莓派</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            &emsp;&emsp;把原来的树莓派套件卖掉之后，自己又忍不住再买了一个。这次只买了一台树莓派，没有鼠键、没有显示器。靠着谷歌搜罗的教程成功实现无...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/04/15/没有显示器怎么玩树莓派/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="aagu's avatar">
-            </div>
-            <div>
-                <strong>aagu</strong>
-                <span>4月 15, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/02/21/氢OS体验/">氢OS 3.0 体验</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/02/21/氢OS体验/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="aagu's avatar">
-            </div>
-            <div>
-                <strong>aagu</strong>
-                <span>2月 21, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/02/07/第一篇/">第一篇</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            第一篇，仅为测试
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/02/07/第一篇/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="aagu's avatar">
-            </div>
-            <div>
-                <strong>aagu</strong>
-                <span>2月 07, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/02/07/hello-world/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/02/07/hello-world/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="aagu's avatar">
-            </div>
-            <div>
-                <strong>aagu</strong>
-                <span>2月 07, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script>
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                TensorFlow安装小记
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>aagu</strong>
+        <span>6月 29, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=TensorFlow安装小记&url=https://aagu.github.io//2017/06/29/TensorFlow安装小记/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=TensorFlow安装小记&url=https://aagu.github.io//2017/06/29/TensorFlow安装小记/index.html&via=aagu" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://aagu.github.io//2017/06/29/TensorFlow安装小记/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://aagu.github.io//2017/06/29/TensorFlow安装小记/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h4 id="硬件信息："><a href="#硬件信息：" class="headerlink" title="硬件信息："></a>硬件信息：<br></h4><p>主板 supermicro X9SRG<br><br>CPU  Xeon E5-2620<br><br>显卡 Tesla K20m<br><br>内存 DDR3 1333 32GB<br><br>硬盘 1TB<br><br>操作系统为Ubuntu 16.04.2 LTS<br></p>
+<h4 id="1、安装显卡驱动"><a href="#1、安装显卡驱动" class="headerlink" title="1、安装显卡驱动"></a>1、安装显卡驱动<br></h4><p>从<a href="http://us.download.nvidia.com/XFree86/Linux-x86_64/375.66/NVIDIA-Linux-x86_64-375.66.run" target="_blank" rel="external">nVidia</a>官方网站下载Linux 64位版，经测试deb版无法安装驱动。Ctrl+Alt+F1切换到控制台安装。安装之后遭遇登陆循环问题，据说老版驱动没有这个问题，但是服务器以后都是通过ssh登陆，进不去桌面没有关系，所有没有测试老版驱动。文末还有关于此问题的讨论。<br></p>
+<h4 id="2、安装CUDA"><a href="#2、安装CUDA" class="headerlink" title="2、安装CUDA"></a>2、安装CUDA<br></h4><p>从<a href="https://developer.nvidia.com/cuda-downloads" target="_blank" rel="external">nVidia</a>官方网站下载的deb(network)版<br><br>定位到下载位置，执行<br><br><code>sudo dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb</code><br><br><code>sudo apt-get update</code><br><br><code>sudo apt-get install cuda</code><br><br>安装之后执行<code>nvcc -V</code>提示没有nvcc，执行<code>export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}</code>，详情可查看<a href="http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#post-installation-actions" target="_blank" rel="external">官方文档</a>。<br></p>
+<h4 id="3、安装cuDNN"><a href="#3、安装cuDNN" class="headerlink" title="3、安装cuDNN"></a>3、安装cuDNN<br></h4><p>从<a href="https://developer.nvidia.com/cudnn" target="_blank" rel="external">nVidia</a>下载cuDNN(需要注册账号)，下载5.1版，定位到下载位置。<br><br>解压<code>tar zxvf cudnn-8.0-linux-x64-v5.1.tgz</code><br><br>进入目录<code>cd cuda</code><br><br>拷贝文件<br><code>sudo cp -P include/cudnn.h /usr/local/cuda-8.0/include</code><br><br><code>sudo cp -P lib64/libcudnn* /usr/local/cuda-8.0/lib64</code><br><br><code>sudo chmod a+r /usr/local/cuda-8.0/lib64/libcudnn*</code><br><br>TensorFlow官方文档还有这样一条<br><br><code>sudo apt-get install libcupti-dev</code><br><br>使用TensorFlow时，提示找不到libcudnn.so.5，执行<br><br><code>sudo rm -rf libcudnn.so libcudnn.so.5</code><br><br><code>sudo ln -s libcudnn.so.5.1.10 libcudnn.so.5</code><br><br><code>sudo ln -s libcudnn.so.5 libcudnn.so</code><br><br>并更新连接库<br><br><code>sudo ldconfig</code><br></p>
+<h4 id="4、安装TensorFlow"><a href="#4、安装TensorFlow" class="headerlink" title="4、安装TensorFlow"></a>4、安装TensorFlow<br></h4><p>由于需要让多人使用TensorFlow，采用pip安装方式<br><br><code>sudo apt-get install python-pip python-dev</code><br><br><code>pip install tensorflow-gpu</code><br><br><code>sudo pip  install --upgrade</code><br><br>安装完成，但使用TensorFlow时有警告<br><code>tensorflow library wasn&#39;t compiled to use xxx, but these are available on your machine and could speed up CPU computation</code><br><br>我觉得十分不爽，于是决定自己编译TensorFolw。<br></p>
+<h5 id="1-克隆仓库"><a href="#1-克隆仓库" class="headerlink" title="(1)克隆仓库"></a>(1)克隆仓库<br></h5><p><code>git clone https://github.com/tensorflow/tensorflow</code><br><br><code>cd tensorflow</code><br><br><code>git checkout r1.2</code><br></p>
+<h5 id="2-安装Bazel"><a href="#2-安装Bazel" class="headerlink" title="(2)安装Bazel"></a>(2)安装Bazel<br></h5><p><code>echo &quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8&quot; | sudo tee /etc/apt/sources.list.d/bazel.list</code><br><br><code>curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -</code><br><br><code>sudo apt-get update &amp;&amp; sudo apt-get install bazel</code><br><br><code>sudo apt-get upgrade bazel</code><br></p>
+<h5 id="3-安装python依赖"><a href="#3-安装python依赖" class="headerlink" title="(3)安装python依赖"></a>(3)安装python依赖<br></h5><p><code>sudo apt-get install python-numpy python-dev python-pip python-wheel</code><br></p>
+<h5 id="4-配置编译脚本"><a href="#4-配置编译脚本" class="headerlink" title="(4)配置编译脚本"></a>(4)配置编译脚本<br></h5><p>一路使用默认选项，仅在<code>Do you wish to build TensorFlow with CUDA support? [y/N]</code>时选择Y，之后一路默认。<br></p>
+<h5 id="5-编译"><a href="#5-编译" class="headerlink" title="(5)编译"></a>(5)编译<br></h5><p><code>bazel build --config=opt --cxxopt=&quot;-D_GLIBCXX_USE_CXX11_ABI=0&quot; --config=cuda //tensorflow/tools/pip_package:build_pip_package</code><br><br><code>bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg</code><br></p>
+<h5 id="6-安装"><a href="#6-安装" class="headerlink" title="(6)安装"></a>(6)安装<br></h5><p><code>sudo pip install /tmp/tensorflow_pkg/tensorflow-1.2.1-cp27-cp27mu-linux_x86_64.whl</code><br></p>
+<h4 id="关于显卡驱动："><a href="#关于显卡驱动：" class="headerlink" title="关于显卡驱动："></a>关于显卡驱动：<br></h4><p>安装CUDA的时候也会安装一次显卡驱动，所有第一步可以跳过，但是CUDA安装的驱动也是375版，依然不能进桌面。我在Arch Linux + dde的环境下安装显卡驱动后xorg-server直接起不来，需要在安装驱动前备份xorg.conf，之后覆盖nVidia生成的xorg.conf。由于用不上桌面，所以没在服务器上测试此方法。</p>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/06/11/浙江理工路由器上网（新篇）/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
