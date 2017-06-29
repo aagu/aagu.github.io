@@ -405,7 +405,7 @@
 <h5 id="4-配置编译脚本"><a href="#4-配置编译脚本" class="headerlink" title="(4)配置编译脚本"></a>(4)配置编译脚本<br></h5><p>一路使用默认选项，仅在<code>Do you wish to build TensorFlow with CUDA support? [y/N]</code>时选择Y，之后一路默认。<br></p>
 <h5 id="5-编译"><a href="#5-编译" class="headerlink" title="(5)编译"></a>(5)编译<br></h5><p><code>bazel build --config=opt --cxxopt=&quot;-D_GLIBCXX_USE_CXX11_ABI=0&quot; --config=cuda //tensorflow/tools/pip_package:build_pip_package</code><br><br><code>bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg</code><br></p>
 <h5 id="6-安装"><a href="#6-安装" class="headerlink" title="(6)安装"></a>(6)安装<br></h5><p><code>sudo pip install /tmp/tensorflow_pkg/tensorflow-1.2.1-cp27-cp27mu-linux_x86_64.whl</code><br></p>
-<h4 id="关于显卡驱动："><a href="#关于显卡驱动：" class="headerlink" title="关于显卡驱动："></a>关于显卡驱动：<br></h4><p>安装CUDA的时候也会安装一次显卡驱动，所有第一步可以跳过，但是CUDA安装的驱动也是375版，依然不能进桌面。我在Arch Linux + dde的环境下安装显卡驱动后xorg-server直接起不来，需要在安装驱动前备份xorg.conf，之后覆盖nVidia生成的xorg.conf。由于用不上桌面，所以没在服务器上测试此方法。</p>
+<h4 id="关于显卡驱动："><a href="#关于显卡驱动：" class="headerlink" title="关于显卡驱动："></a>关于显卡驱动：<br></h4><p>安装CUDA的时候也会安装一次显卡驱动，所以第一步可以跳过，但是CUDA安装的驱动也是375版，依然不能进桌面。我在Arch Linux + dde的环境下安装显卡驱动后xorg-server直接起不来，需要在安装驱动前备份xorg.conf，之后覆盖nVidia生成的xorg.conf。由于用不上桌面，所以没在服务器上测试此方法。</p>
 
     
 
